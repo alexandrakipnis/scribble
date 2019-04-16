@@ -2,12 +2,12 @@ import React from 'react'
 
 import Form from './Form'
 import List from './List'
-import Side from './Side'
+import Sidebar from './Sidebar'
 
 const Main = () => {
     return (
         <div classname ="Main" style={style}>
-            <Side />
+            <Sidebar />
             <List />
             <Form />
         </div>
