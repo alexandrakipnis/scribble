@@ -6,12 +6,18 @@ import Side from './Side'
 
 const Main = () => {
     return (
-        <div classname ="Main">
+        <div classname ="Main" style={style}>
             <Side />
             <List />
             <Form />
         </div>
     )
+}
+
+const style = {
+    display: 'flex',
+    height: '100vh',
+    alignItems: 'stretch',   
 }
 
 export default Main
