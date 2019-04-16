@@ -1,73 +1,39 @@
 import React from 'react'
-//import { StyleSheet, css } from 'aphrodite'
+import { StyleSheet, css } from 'aphrodite'
 import quill from './quill.svg'
 import plusIcon from './new.png'
 import plusHover from './new-hover.png'
 
-class Sidebar extends React.Component {
-    
-    state = {
-      newIconHovered: false,
-
-    }
-
-    handleMouseEnter() {
-      this.setState({ newIconHovered: true })
-    }
-
-    handleMouseLeave() {
-      this.setState({ newIconHovered: false })
-    }
-
-    render() {
+const Sidebar = () => {
+  
       return (
-          <div 
-            classname="Sidebar" 
-            style={styles.sidebar}
-          >
-              <div 
-                classname="logo" 
-                style={styles.logo}
-              >
+          <div className={css(styles.sidebar)} >
+              <div className={css(styles.logo)} >
                   <img 
                     src={quill} 
                     alt='Scribble' 
-                    style={styles.logoImg}
+                    className={css(styles.logoImg)}
                   />
               </div>
               <a 
                 href='/notes' 
-                style={styles.newNote} 
-                onMouseEnter={() => this.handleMouseEnter()} 
-                onMouseLeave={() => this.handleMouseLeave()}
+                className={css(styles.newNote)} 
               >
                   <img 
                     src={plusHover} 
                     alt='New Note' 
-                    style={styles.newNoteImg}
+                    className={css(styles.newNoteImg)}
                   /> 
                   <img 
                     src={plusIcon} 
                     alt='New Note' 
-                    style={{
-                      ...styles.newNoteImg, 
-                      opacity: this.state.newIconHovered ? 0 : 1
-                    }}
+                    className={css(styles.newNoteImg, styles.newNoteImgHover)}
                   /> 
               </a>
 
-              <div 
-                classname="signOut" 
-                style={styles.signOut}
-              >
-                  <button 
-                    style={styles.button}
-                  >
-                      <i 
-                        className = "fa fa-sign-out" 
-                        style={styles.buttonIcon}
-                      >
-                      </i> 
+              <div className={css(styles.signOut)} >
+                  <button className={css(styles.button)}>
+                      <i className={`fa fa-sign-out ${css(styles.buttonIcon)}`}> </i> 
                   </button>
               </div>
 
@@ -75,10 +41,9 @@ class Sidebar extends React.Component {
 
 
       )
-    }
 }
 
-const styles = {
+const styles =  StyleSheet.create({
     sidebar: {
       width: '6rem',
       backgroundColor: '#f3f3f3',
@@ -107,11 +72,11 @@ const styles = {
       width: '100%',
       transition: 'opacity 0.25s ease-in-out',
     },
-    //newNoteImgHover: {
-      //':hover': {
-      //  opacity: 0,
-      //s},
-    //},
+    newNoteImgHover: {
+      ':hover': {
+       opacity: 0,
+      },
+    },
     signOut: {
       position: 'absolute',
       bottom: '1rem',
@@ -126,5 +91,5 @@ const styles = {
     buttonIcon: {
       fontSize: '2rem',
     },
-  }
+  })
 export default Sidebar
