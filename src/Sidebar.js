@@ -4,7 +4,7 @@ import quill from './quill.svg'
 import plusIcon from './new.png'
 import plusHover from './new-hover.png'
 
-const Sidebar = () => {
+const Sidebar = ({resetCurrentNote}) => {
   
       return (
           <div className={css(styles.sidebar)} >
@@ -17,7 +17,11 @@ const Sidebar = () => {
               </div>
               <a 
                 href='/notes' 
-                className={css(styles.newNote)} 
+                className={css(styles.newNote)}
+                onClick={(ev) => {
+                  ev.preventDefault()
+                  resetCurrentNote()
+                }} 
               >
                   <img 
                     src={plusHover} 
