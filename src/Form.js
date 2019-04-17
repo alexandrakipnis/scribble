@@ -1,7 +1,7 @@
 import React from 'react'
 import "./NoteForm.css"
 
-const Form = () => {
+const Form = (props) => {
     return(
         <div className="NoteForm">
           <div className="form-actions">
@@ -15,6 +15,7 @@ const Form = () => {
                 type="text"
                 name="title"
                 placeholder="Title your note"
+                value={props.currentNote.title}
               />
             </p>
             
