@@ -19,7 +19,11 @@ const Form = (props) => {
               />
             </p>
             
-            <textarea name="body"></textarea>
+            <textarea 
+              name="body"
+              value={props.currentNote.body}
+            >
+            </textarea>
           </form>
         </div>
     )
