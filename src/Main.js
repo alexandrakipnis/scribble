@@ -9,23 +9,7 @@ class Main extends React.Component {
         super()
         this.state = {
             currentNote: this.blankNote(),
-            notes: [
-                {
-                    id: 1,
-                    title: 'Why I <3 JS',
-                    body: 'Because I like code, and JS is code.',
-                },
-                {
-                    id: 2,
-                    title: 'Thoughts on breakfast',
-                    body: 'I love it!',
-                },
-                {
-                    id: 3,
-                    title: 'Watching the first episode of Black Mirror with your parents',
-                    body: 'Don\'t.',
-                },
-            ]
+            notes: []
         }
     }
 
