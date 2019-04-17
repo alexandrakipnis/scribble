@@ -8,6 +8,7 @@ class Main extends React.Component {
     constructor() {
         super()
         this.state = {
+            currentNote: null,
             notes: [
                 {
                     id: 1,
@@ -28,11 +29,18 @@ class Main extends React.Component {
         }
     }
 
+    setCurrentNote = (note) => {
+        this.setState({ currentNote: note })
+    }
+
     render() {
         return (
             <div classname ="Main" style={style}>
                 <Sidebar />
-                <List notes={this.state.notes} />
+                <List 
+                    notes={this.state.notes} 
+                    setCurrentNote={this.setCurrentNote}
+                />
                 <Form />
             </div>
         )
