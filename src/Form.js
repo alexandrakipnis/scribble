@@ -1,11 +1,12 @@
 import React from 'react'
+import "./NoteForm.css"
 
 const Form = () => {
     return(
         <div className="NoteForm">
           <div className="form-actions">
             <button type="button">
-              <i className="fa fa-trash-o"></i>
+              <i className="far fa-trash-alt"></i>
             </button>
           </div>
           <form>
