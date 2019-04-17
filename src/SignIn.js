@@ -1,11 +1,13 @@
 import React from 'react'
+import './SignIn.css'
+import googleLogo from './google.svg'
 
 const Signin = ({handleAuth}) => {
     return(
         <div className="SignIn">
             <header className="Header">
                 <img src="media/quill.svg" alt=""/>
-                <span className="title">Noteherder</span>
+                <span className="title"></span>
             </header>
             <main>
             <h3>Hey, Nerd! You Like Notes?</h3>
@@ -14,11 +16,11 @@ const Signin = ({handleAuth}) => {
                 className="github"
                 onClick={handleAuth}
             >
-                <i className="fa fa-github"></i>
+                <i className="fab fa-github"></i>
                 Sign in with GitHub
             </button>
             <button className="google">
-                <img src="media/google.svg" alt=""/>
+                <img src={googleLogo} alt=""/>
                 Sign in with Google
             </button>
          </main>
