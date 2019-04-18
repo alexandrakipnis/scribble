@@ -1,8 +1,13 @@
 import React from 'react'
 import './SignIn.css'
 import googleLogo from './google.svg'
+import {auth, githubProvider} from './base'
 
-const Signin = ({handleAuth}) => {
+const Signin = () => {
+    const authenticate = (provider) => {
+        auth.signInWithPopup(provider)
+    }
+
     return(
         <div className="SignIn">
             <header className="Header">
@@ -14,7 +19,7 @@ const Signin = ({handleAuth}) => {
             <p>You never know when you'll need to write crap down. In fact, you should probably be taking notes right now.</p>
             <button 
                 className="github"
-                onClick={handleAuth}
+                onClick={() => authenticate(githubProvider)}
             >
                 <i className="fab fa-github"></i>
                 Sign in with GitHub
