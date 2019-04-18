@@ -23,7 +23,7 @@ class Main extends React.Component {
     }
 
     blankNote = () => {
-        return {
+        return { 
             id: null,
             title: '',
             body: '',
