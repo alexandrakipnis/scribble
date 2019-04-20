@@ -56,7 +56,8 @@
     border-top: none;
   }
   .NoteList ul#notes li:hover {
-    background-color: #008bf8;
+    /* background-color: #008bf8; */
+    background-color: #FECB9D;
   }
   .NoteList ul#notes li:hover,
   .NoteList ul#notes li:hover .note * {
