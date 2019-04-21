@@ -15,7 +15,9 @@ const Note = ({note, setCurrentNote}) => {
                         { note.body }
                     </p>
                 </div>
+                
             </div>
+            
         </li>
     )
 
