@@ -10,7 +10,7 @@ const Form = ({currentNote, saveNote, removeCurrentNote}) => {
 
     return(
         <div className="NoteForm">
-          <div className="form-actions">
+          <div className="form-actions"> 
             <button 
             type="button"
             onClick={removeCurrentNote}
@@ -23,7 +23,7 @@ const Form = ({currentNote, saveNote, removeCurrentNote}) => {
               <input
                 type="text"
                 name="title"
-                placeholder="Title your note"
+                placeholder="Title your note..."
                 value={currentNote.title}
                 onChange={handleChanges}
               />
@@ -31,6 +31,7 @@ const Form = ({currentNote, saveNote, removeCurrentNote}) => {
             
             <textarea 
               name="body"
+              placeholder="Type your note..."
               value={currentNote.body}
               onChange={handleChanges}
             >
