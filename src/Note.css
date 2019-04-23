@@ -12,6 +12,7 @@
     background: none;
     padding: 0;
     align-content: right;
+    font-size: 25px;
   }
 .Note button[type=submit] {
     background-color: #008bf8;

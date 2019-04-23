@@ -17,6 +17,7 @@ const Note = ({note, setCurrentNote, removeCurrentNote}) => {
                         <i class="far fa-check-circle"></i>
 
                     </button>
+
                 </div>
                 <div className="note-title">
                     { note.title }
