@@ -58,7 +58,8 @@ class Main extends React.Component {
         
     }
 
-    removeCurrentNote = () => {
+    removeCurrentNote = (note) => {
+        this.setCurrentNote(note)
         const notes = [...this.state.notes]
         const i = notes.findIndex(note => note.id === this.state.currentNote.id)
         if(i > -1){
@@ -87,11 +88,6 @@ class Main extends React.Component {
                     saveNote={this.saveNote}
                     removeCurrentNote={this.removeCurrentNote}
                 />
-                {/* <Note 
-                    note={this.state.note}
-                    setCurrentNote={this.setCurrentNote}
-                    removeCurrentNote={this.removeCurrentNote} 
-                /> */}
             </div>
         )
     }

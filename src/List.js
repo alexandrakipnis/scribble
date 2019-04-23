@@ -2,7 +2,7 @@ import React from 'react'
 import "./NoteList.css"
 import Note from './Note'
 
-const List = ({notes, setCurrentNote, removeCurrentNote}) => {
+const List = ({notes, setCurrentNote, removeCurrentNote, resetCurrentNote}) => {
     
     return(
         <div className="NoteList">
