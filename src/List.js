@@ -14,11 +14,13 @@ const List = ({notes, setCurrentNote, removeCurrentNote}) => {
                         key={note.id} 
                         note={note} 
                         setCurrentNote={setCurrentNote}
+                        removeCurrentNote={removeCurrentNote}
                     /> 
                 )}
             {/* </a> */}
           </ul>
         </div>
+
     )
 }
 

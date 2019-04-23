@@ -1,6 +1,7 @@
 import React from 'react'
 import './Note.css'
-import Main from './Main'
+// import Main from './Main'
+
 const Note = ({note, setCurrentNote, removeCurrentNote}) => {
     return (
         <li 
