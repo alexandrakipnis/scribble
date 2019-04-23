@@ -100,6 +100,7 @@ const styles =  StyleSheet.create({
     },
     buttonIcon: {
       fontSize: '2rem',
+      color: '#FECB9D'
     },
   })
 export default Sidebar
