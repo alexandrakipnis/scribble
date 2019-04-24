@@ -94,12 +94,13 @@ const styles =  StyleSheet.create({
     button: {
       backgroundColor: 'transparent',
       border: '0',
-      color: '#008bf8',
+      color: '#FECB9D',
       cursor: 'pointer',
       outline: 'none',
     },
     buttonIcon: {
       fontSize: '2rem',
+      color: '#FECB9D'
     },
   })
 export default Sidebar

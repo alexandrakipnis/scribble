@@ -23,7 +23,7 @@ h4,
 h5 {
   font-family: Fauna One;
   font-weight: 400;
-  color: #008bf8;
+  color: #FECB9D;
 }
 .App {
   font-family: Oxygen, Helvetica, Arial, sans-serif
@@ -110,7 +110,7 @@ h5 {
   margin-right: 4px;
 }
 .Header .title {
-  color: #008BF8;
+  color: #FECB9D;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 80px;
@@ -144,7 +144,7 @@ h5 {
 .Sidebar button {
   background-color: transparent;
   border: 0;
-  color: #008BF8;
+  color: #FECB9D;
   cursor: pointer;
 }
 .Sidebar a img {
@@ -226,7 +226,7 @@ h5 {
   border-top: none;
 }
 .NoteList ul#notes li:hover {
-  background-color: #008bf8;
+  background-color: #FECB9D;
 }
 .NoteList ul#notes li:hover,
 .NoteList ul#notes li:hover .note * {
@@ -284,7 +284,7 @@ h5 {
   padding: 0;
 }
 .NoteForm button[type=submit] {
-  background-color: #008bf8;
+  background-color: #FECB9D;
   border-radius: 4px;
   color: #fff;
   font-size: 1.4rem;
@@ -303,7 +303,7 @@ h5 {
   border: none;
   font-size: 200%;
   font-family: Fauna One;
-  color: #008bf8;
+  color: #FECB9D;
   font-weight: 400;
   width: 100%;
   outline: none;
