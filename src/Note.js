@@ -15,7 +15,6 @@ const Note = ({note, setCurrentNote, removeCurrentNote}) => {
                         onClick={removeCurrentNote}
                     >
                         <i class="far fa-check-circle"></i>
-
                     </button>
 
                 </div>
