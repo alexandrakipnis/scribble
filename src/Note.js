@@ -12,6 +12,7 @@ const Note = ({note, setCurrentNote, removeCurrentNote}) => {
                     <button 
                         type="button"
                         onClick={removeCurrentNote}
+                        
                     >
                         {/* <i className="far fa-trash-alt"></i> */}
                         <i class="far fa-check-circle"></i>
