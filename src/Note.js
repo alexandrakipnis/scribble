@@ -1,7 +1,6 @@
 import React from 'react'
 import './Note.css'
 // import Main from './Main'
-
 const Note = ({note, setCurrentNote, removeCurrentNote}) => {
     return (
         <li 
@@ -10,12 +9,15 @@ const Note = ({note, setCurrentNote, removeCurrentNote}) => {
         >
             <div className="note">
                 <div className="list-actions">
+                
                     <button 
                         type="button"
                         onClick={removeCurrentNote}
                         
                     >
+                        {/* <i className="far fa-trash-alt"></i> */}
                         <i class="far fa-check-circle"></i>
+
                     </button>
 
                 </div>
