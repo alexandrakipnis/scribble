@@ -64,9 +64,7 @@ class Main extends React.Component {
         if(i > -1){
             notes.splice(i, 1)
             this.setState({notes})
-            
         }
-
         this.resetCurrentNote()
     }
 
