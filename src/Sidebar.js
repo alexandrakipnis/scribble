@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, css } from 'aphrodite'
-import quill from './quill.svg'
+import scrib from './scribbleicon.ico'
 import plusIcon from './new.png'
 import plusHover from './new-hover.png'
 
@@ -10,7 +10,7 @@ const Sidebar = ({resetCurrentNote, signOut}) => {
           <div className={css(styles.sidebar)} >
               <div className={css(styles.logo)} >
                   <img 
-                    src={quill} 
+                    src={scrib} 
                     alt='Scribble' 
                     className={css(styles.logoImg)}
                   />
