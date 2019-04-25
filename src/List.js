@@ -15,6 +15,7 @@ const List = ({notes, setCurrentNote, removeCurrentNote, resetCurrentNote}) => {
                         note={note} 
                         setCurrentNote={setCurrentNote}
                         removeCurrentNote={removeCurrentNote}
+                        resetCurrentNote={resetCurrentNote}
                     /> 
                 )}
             {/* </a> */}

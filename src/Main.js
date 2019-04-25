@@ -81,6 +81,7 @@ class Main extends React.Component {
                     notes={this.state.notes} 
                     setCurrentNote={this.setCurrentNote}
                     removeCurrentNote={this.removeCurrentNote}
+                    resetCurrentNote={this.resetCurrentNote}
                 />
                 <Form 
                     currentNote={this.state.currentNote}
