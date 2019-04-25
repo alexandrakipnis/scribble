@@ -27,7 +27,7 @@
 .Note button:hover {
   color: black
 }
-.Note .button {
+.Note button {
     color: #999;
     font-size: 2rem;
     margin: 0;
