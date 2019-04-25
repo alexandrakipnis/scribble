@@ -73,16 +73,19 @@ const styles =  StyleSheet.create({
     },
     newNote: {
       marginTop: '2rem',
+      color: '#FECB9D',
       position: 'relative',
       width: '4rem',
     },
     newNoteImg: {
       position: 'absolute',
+      color: '#FECB9D',
       left: '0',
       width: '100%',
       transition: 'opacity 0.25s ease-in-out',
     },
     newNoteImgHover: {
+      color: '#FECB9D',
       ':hover': {
        opacity: 0,
       },
