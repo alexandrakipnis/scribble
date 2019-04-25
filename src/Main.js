@@ -3,7 +3,7 @@ import React from 'react'
 import Form from './Form'
 import List from './List'
 import Sidebar from './Sidebar'
-import Note from './Note'
+// import Note from './Note'
 import base from './base'
 
 
