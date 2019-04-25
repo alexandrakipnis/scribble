@@ -2,6 +2,7 @@ import React from 'react'
 import './Note.css'
 // import Main from './Main'
 const Note = ({note, setCurrentNote, removeCurrentNote, resetCurrentNote}) => {
+
     return (
         <li 
             className="Note"
@@ -12,7 +13,9 @@ const Note = ({note, setCurrentNote, removeCurrentNote, resetCurrentNote}) => {
                 
                     <button 
                         type="button"
-                        onClick={removeCurrentNote}
+                        onClick={() => 
+                            removeCurrentNote()
+                        }
                         
                     >
                         {/* <i className="far fa-trash-alt"></i> */}

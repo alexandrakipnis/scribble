@@ -68,6 +68,8 @@ class Main extends React.Component {
         this.resetCurrentNote()
     }
 
+
+
     render() {
         return (
             <div classname ="Main" style={style}>
