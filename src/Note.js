@@ -15,6 +15,8 @@ const Note = ({note, setCurrentNote, removeCurrentNote, resetCurrentNote}) => {
                         type="button"
                         onClick={() => 
                             removeCurrentNote()
+                            
+
                         }
                         
                     >
